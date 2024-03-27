@@ -1,5 +1,5 @@
 import Image from "next/image";
-import JobListCard from "./(components)/JobListCard";
+  
 
 const data = {
   imageUrl:
