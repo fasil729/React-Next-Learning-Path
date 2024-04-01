@@ -24,10 +24,10 @@ const HospitalListPage: React.FC = () => {
   }
 
   return (
-    <div>
+    <div className='flex flex-col gap-10'>
       <TopBar />
       <SearchBar />
-      <div className="flex flex-col">
+      <div className='flex flex-col items-center justify-center gap-16' >
         {data?.data.map((hospital) => (
           <HospitalCard  hospital={hospital} />
         ))}

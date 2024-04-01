@@ -45,11 +45,11 @@ const HospitalCard: React.FC<HospitalCardProps> = ({
                   </div>
         
                   <div
-                    className={`rounded-full py-1 px-2 text-xs font-semibold ${
+                    className={`rounded-[21px] w-[98px] h-[22px] py-1 px-2 text-xs font-semibold ${
                         status === 'open' ? 'bg-green-200 text-green-800' : 'bg-red-200 text-red-800'
                     }`}
                 >
-                    {status === 'open' ? 'Open' : 'Closed'}
+                    {status === 'open' ? 'Open Now' : 'Closed Now'}
                 </div>
                 </div>
         
