@@ -18,11 +18,11 @@ export const apiSlice = createApi({
       }),
     }),
     searchHospitals: builder.query<HospitalListResponse, string>({
-      query: (keyword) => ({
+      query: (institutionName) => ({
         url: "search",
         method: "POST",
         body: JSON.stringify({
-          keyword,
+          keyword: institutionName,
           institutions: true,
           articles: false,
           doctors: false
