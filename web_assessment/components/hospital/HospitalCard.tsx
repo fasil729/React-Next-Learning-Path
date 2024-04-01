@@ -8,25 +8,23 @@ interface HospitalCardProps {
 }
 
 const HospitalCard: React.FC<HospitalCardProps> = ({
-    hospital: { _id, Photo, address, institutionName, phoneNumbers, emails, status },
+    hospital: { _id, photo, address, institutionName, phoneNumbers, emails, status },
 }) => {
     return (
-        <Link href={`/hospital/${_id}`}>
-               <a
-              href="#"
-              className="flex bg-customBlue bg-opacity-5 flex-col md:flex-row items-center border border-gray-200 rounded-lg shadow w-[80%] hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 m-2"
-            >
+        
+
+        <Link href={`/hospital/${_id}`} className="flex bg-customBlue bg-opacity-5 flex-col md:flex-row items-center border border-gray-200 rounded-lg shadow w-[80%] hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 m-2"> 
               <div className="w-full md:w-2/5 lg:w-3/10 h-52 relative overflow-hidden p-2 m-1">
                 <Image
-                  src={Photo}
+                  src={photo}
                   alt="profile"
                   //   tFit="cover"
                   fill
                   className="object-cover rounded-2xl"
                 />
                 </div>
-               </a>
-            
+                
+              
               
         
               <div className="flex flex-col justify-between leading-normal w-full gap-6">
@@ -76,8 +74,9 @@ const HospitalCard: React.FC<HospitalCardProps> = ({
                   </div>
                 </div>
               </div>
+              
             </Link>
-         
+        
         
     );
 };

@@ -8,7 +8,7 @@ type HospitalData = {
   };
   phoneNumbers: string[];
   emails: string[];
-  Photo: string;
+  photo: string;
   location: {
     type: string;
     coordinates: [number, number];
